@@ -1,4 +1,4 @@
-fixed-button-width: false # Set to true/false
+fixed-button-width: true # Set to true/false
 icon-position: left # Set to left/right
 buttons:
   - category: Blogs
@@ -7,6 +7,11 @@ buttons:
       url: https://www.example.com
       icon: tdesign:activity # Icons are optional
       tag: Tag
+
+      
+
+    - title: Video Embed???
+    <iframe src="https://www.pornhub.com/embed/ph60a1b79a3784d" frameborder="0" width="560" height="340" scrolling="no" allowfullscreen></iframe>
 
     - title: Example 2
       url: https://www.example.org
