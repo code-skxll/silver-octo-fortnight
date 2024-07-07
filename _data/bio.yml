@@ -5,10 +5,13 @@
       image: assets/New folder/banner_330_512.jpg
 
     - url: https://www.example.org
-      image: https://picsum.photos/540/960.webp
+      image: assets/New folder/banner-ranking-2x (4).webp
 
     - url: https://www.example.com
-      image: https://picsum.photos/720/1280.webp
+      image: assets/New folder/banner_330_512.webp
+
+    - url: https://www.example.com
+      image: assets/New folder/banner-ranking-2x (5).webp
 
 - name: Instagram
   items:
