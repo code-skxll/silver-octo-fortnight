@@ -1,6 +1,11 @@
 - name: Free Porn Games
   ratio: vertical # For vertical 9:16 aspect ratio. Ideal for video thumbnails, such as those used on Instagram Reels, YouTube Shorts and TikTok. To use the default 1:1 aspect ratio (square), remove this variable.
   items:
+
+    - url: https://network.nutaku.net/images/lp/aeons-echo/4-character-selector-v2/1/?ats=eyJhIjoxMDYwMTU2LCJjIjo2MjEwNzk0MywibiI6MSwicyI6MSwiZSI6MTA5MDQsInAiOjJ9
+      image: assets/New folder/banner-ranking-2x (3).webp
+
+      
     - url: https://www.example.com
       image: assets/New folder/banner_330_512.jpg
 
