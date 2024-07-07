@@ -13,13 +13,9 @@
     - url: https://www.example.com
       image: assets/New folder/banner-ranking-2x (5).webp
 
-- name: Instagram
-  items:
     - url: https://www.example.com
-      image: https://picsum.photos/700/400.webp # You can use paths to images in the assets folder, e.g., assets/images/insta.jpg.
+      image: assets/New folder/1720006917_GameEvent_ProjectQT_9322_EventBanner_360x440.jpg
 
-    - url: https://www.example.org
-      image: https://picsum.photos/500.webp
+    - url: https://example/com
+      image: assets/New folder/neoimag.jpg
 
-    - url: https://www.example.com
-      image: https://picsum.photos/250/300.webp
