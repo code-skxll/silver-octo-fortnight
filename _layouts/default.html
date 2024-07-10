@@ -104,11 +104,12 @@
                 
                 let datatp = typeof(obj_data)
                 console.log(datatp)
-                const {title,link:,message} = obj_data
+                const {title,link,message} = obj_data
+        
             
                 document.getElementById('toggle-ph').style.display = 'block';
                 
-                document.getElementById('test-resp').textContent = link:
+                document.getElementById('test-resp').textContent = link;
             })
             .catch(error => {
               // Handle any errors
