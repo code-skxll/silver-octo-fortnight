@@ -96,7 +96,7 @@
               headers: {
                 'Content-Type': 'application/json',
               },
-              body: JSON.stringify(postData)
+              body: postData
             })
             .then(response => response.json())  // Assuming Lambda returns JSON
             .then(data => {
