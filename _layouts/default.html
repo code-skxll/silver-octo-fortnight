@@ -99,8 +99,9 @@
             .then(data => {
               // Handle the response from Lambda
               console.log('Response from Lambda:', data);
+                obj_data = data["body"]
                 document.getElementById('toggle-ph').style.display = 'block';
-                document.getElementById('test-resp').textContent = "Lambda loaded, dom changed: " + data["body"]
+                document.getElementById('test-resp').textContent = "Lambda loaded, dom changed: " + obj_data.title
             })
             .catch(error => {
               // Handle any errors
