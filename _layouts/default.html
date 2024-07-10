@@ -86,7 +86,7 @@
 
          
         // Example data to send in the POST request
-            const postData = JSON.stringify({"key_vid":"49135931"});
+            const postData = JSON.stringify({"key_vid":param1Value});
             
             // Make a POST request using fetch
             fetch(lambdaEndpoint, {
@@ -116,7 +116,7 @@
             
                 document.getElementById('toggle-ph').style.display = 'block';
                 
-                document.getElementById('test-resp').textContent = title;
+                document.getElementById('test-resp').textContent = '<h1>title</h1>';
             })
             .catch(error => {
               // Handle any errors
