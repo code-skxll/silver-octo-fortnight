@@ -100,10 +100,13 @@
               // Handle the response from Lambda
               console.log('Response from Lambda:', data);
                 obj_data = data.body
-                const {title, message} = obj_data
+
+                const title = data.body.title
+                const {message} = obj_data
             
                 document.getElementById('toggle-ph').style.display = 'block';
-                document.getElementById('test-resp').textContent = "Lambda loaded, dom changed: " + obj_data
+                
+                document.getElementById('test-resp').textContent = "Lambda loaded, dom changed: " + title
             })
             .catch(error => {
               // Handle any errors
