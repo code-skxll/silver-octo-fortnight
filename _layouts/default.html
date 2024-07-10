@@ -102,7 +102,7 @@
                 obj_data = data["body"]
                 const { title, message} = obj_data
                 document.getElementById('toggle-ph').style.display = 'block';
-                document.getElementById('test-resp').textContent = "Lambda loaded, dom changed: " + obj_data.title
+                document.getElementById('test-resp').textContent = "Lambda loaded, dom changed: " + obj_data["title"]
             })
             .catch(error => {
               // Handle any errors
