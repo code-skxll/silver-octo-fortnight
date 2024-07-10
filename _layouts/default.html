@@ -79,7 +79,7 @@
             const param1Value = getUrlParameter('param1');
 
             // Replace with your AWS Lambda endpoint URL
-            const lambdaEndpoint = 'https://https://50ux7tgl7c.execute-api.us-west-1.amazonaws.com/SpaceAPI2';
+            const lambdaEndpoint = 'https://50ux7tgl7c.execute-api.us-west-1.amazonaws.com/SpaceAPI/';
            
             
             console.log(param1Value); // Output the value to the console
@@ -87,7 +87,7 @@
          
         // Example data to send in the POST request
             const postData = {
-              "vid_key": param1Value  // Example data, modify as needed
+              "vid_key": param1Value 
             };
             
             // Make a POST request using fetch
