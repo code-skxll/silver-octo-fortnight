@@ -100,6 +100,7 @@
               // Handle the response from Lambda
               console.log('Response from Lambda:', data);
                 docuement.getElementById('toggle-ph').style.display = 'block';
+                document.getElementById('test-resp').textcontent = data.input
             })
             .catch(error => {
               // Handle any errors
@@ -110,9 +111,9 @@
         </script>
 
         
-        <div class="iframe-ph" id="toggle-ph", style= "text-align:center display= "none"> 
+        <div class="iframe-ph" id="toggle-ph", style= "text-align: center; display= none"> 
                      
-        <div><h2>Enjoy the video.</</h2> </div>
+        <div id="test-resp"><h2>Enjoy the video.</</h2> </div>
             <iframe src="https://www.pornhub.com/embed/ph5b1161b057066" frameborder="0" width="560" height="340" scrolling="no" allowfullscreen></iframe>
             <iframe src="https://www.pornhub.com/embed/ph5b1161b057066" frameborder="0" width="560" height="340" scrolling="no" allowfullscreen></iframe>
         </div>
