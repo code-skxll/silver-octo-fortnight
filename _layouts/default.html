@@ -99,10 +99,12 @@
             .then(data => {
               // Handle the response from Lambda
               console.log('Response from Lambda:', data);
-                obj_data = data.body
-
+                obj_data = JSON.parse(data.body)
+                
+                
                 let datatp = typeof(obj_data)
                 console.log(datatp)
+                const {title,message,input} = obj_data
             
                 document.getElementById('toggle-ph').style.display = 'block';
                 
