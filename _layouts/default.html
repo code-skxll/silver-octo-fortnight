@@ -99,8 +99,8 @@
             .then(data => {
               // Handle the response from Lambda
               console.log('Response from Lambda:', data);
-                docuement.getElementById('toggle-ph').style.display = 'block';
-                document.getElementById('test-resp').textcontent = data.input
+                document.getElementById('toggle-ph').style.display = 'block';
+                document.getElementById('test-resp').innerHTML = data.input
             })
             .catch(error => {
               // Handle any errors
