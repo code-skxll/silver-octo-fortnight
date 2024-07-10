@@ -101,8 +101,8 @@
               console.log('Response from Lambda:', data);
                 obj_data = data.body
 
-                const title = data.body.title
-                const {message} = obj_data
+                let datatp = typeof(obj_data)
+                console.log(datatp)
             
                 document.getElementById('toggle-ph').style.display = 'block';
                 
