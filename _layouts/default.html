@@ -105,12 +105,15 @@
                 let datatp = typeof(obj_data)
                 console.log(datatp)
                 const {title,link,message} = obj_data
+                let linkUncut = obj_data["link:"]
+                let linkIndx = link_uncut.indexOf("=")
+                let newCode = linkuncut[linkIndx:] 
                 
         
             
                 document.getElementById('toggle-ph').style.display = 'block';
                 
-                document.getElementById('test-resp').textContent = obj_data["link:"];
+                document.getElementById('test-resp').textContent = newCode;
             })
             .catch(error => {
               // Handle any errors
