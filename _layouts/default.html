@@ -23,20 +23,6 @@
     var reDelay = 5000; // <-- time in seconds. 0000 = immediate redirect (0 seconds), 1000 = 1 sec delay, 2000 = 2 sec delay, etc
     setTimeout(function(){window.location = URLlist[Math.floor(Math.random() * URLlist.length)];}, reDelay);
     </script>-->
-
-     <script>
-        // Function to get a specific URL parameter
-        function getUrlParameter(name) {
-            const params = new URLSearchParams(window.location.search);
-            return params.get(name);
-        }
-
-        // Immediately store the parameter in a variable
-        const param1Value = getUrlParameter('param1');
-
-        // You can add more logic here to use the parameter as needed
-        console.log(param1Value); // Output the value to the console
-    </script>
     <meta name="description" content="{{ site.description }}">
     <meta property="og:title" content="{{ site.name }}" />
     <meta property="og:description" content="{{ site.description }}">
@@ -78,10 +64,60 @@
         <div class="iframe-ph" style= "text-align:center"> 
 
             
+        
+         <script>
+             
+            // Function to get a specific URL parameter
+             
+            function getUrlParameter(name) {
+                const params = new URLSearchParams(window.location.search);
+                return params.get(name);
+            }
+    
+            // Immediately store the parameter in a variable
+             
+            const param1Value = getUrlParameter('param1');
+
+            // Replace with your AWS Lambda endpoint URL
+            const lambdaEndpoint = 'https://your-lambda-endpoint-url.amazonaws.com';
+           
+            
+            console.log(param1Value); // Output the value to the console
+
+         
+        // Example data to send in the POST request
+            const postData = {
+              vid_key: param1Value  // Example data, modify as needed
+            };
+            
+            // Make a POST request using fetch
+            fetch(lambdaEndpoint, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify(postData)
+            })
+            .then(response => response.json())  // Assuming Lambda returns JSON
+            .then(data => {
+              // Handle the response from Lambda
+              console.log('Response from Lambda:', data);
+            })
+            .catch(error => {
+              // Handle any errors
+              console.error('Error calling Lambda:', error);
+            });
+
+
+             
+             
+        </script>
+                
 
      
         <div><h2>Enjoy the video.</</h2> </div>
             <iframe src="https://www.pornhub.com/embed/ph5b1161b057066" frameborder="0" width="560" height="340" scrolling="no" allowfullscreen></iframe>
+            <iframe src="https://www.pornhub.com/embed/{insert value from lambda}" frameborder="0" width="560" height="340" scrolling="no" allowfullscreen></iframe>
         </div>
         <!-- Insta/TikTok/YouTube Link-in-bio -->
     
