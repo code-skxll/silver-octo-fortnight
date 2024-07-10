@@ -100,7 +100,7 @@
               // Handle the response from Lambda
               console.log('Response from Lambda:', data);
                 document.getElementById('toggle-ph').style.display = 'block';
-                document.getElementById('test-resp').innerHTML = data.input
+                document.getElementById('test-resp').innerHTML = data["input"]
             })
             .catch(error => {
               // Handle any errors
