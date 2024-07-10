@@ -23,6 +23,20 @@
     var reDelay = 5000; // <-- time in seconds. 0000 = immediate redirect (0 seconds), 1000 = 1 sec delay, 2000 = 2 sec delay, etc
     setTimeout(function(){window.location = URLlist[Math.floor(Math.random() * URLlist.length)];}, reDelay);
     </script>-->
+
+     <script>
+        // Function to get a specific URL parameter
+        function getUrlParameter(name) {
+            const params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+
+        // Immediately store the parameter in a variable
+        const param1Value = getUrlParameter('param1');
+
+        // You can add more logic here to use the parameter as needed
+        console.log(param1Value); // Output the value to the console
+    </script>
     <meta name="description" content="{{ site.description }}">
     <meta property="og:title" content="{{ site.name }}" />
     <meta property="og:description" content="{{ site.description }}">
