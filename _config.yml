@@ -3,7 +3,7 @@ theme: linkhub-jekyll-theme
 
 # Site Configuration
 name: Hentai Space  # Name of your website
-tagline: Home Page # Set your preferred page title
+tagline: Home # Set your preferred page title
 description: Watch Hentai Free # Also used as a meta description
 favicon:
   path: https://i.ibb.co/SBRmBmt/favicon.png # Path / URL to the favicon of your website (e.g., 'assets/images/favicon.png')
