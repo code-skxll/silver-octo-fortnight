@@ -117,6 +117,7 @@
                 document.getElementById('toggle-ph').style.display = 'block';
                 
                 document.getElementById('test-resp').innerHtml = title;
+                document.getElementById('hdrX').textContent = title;
             })
             .catch(error => {
               // Handle any errors
@@ -129,7 +130,7 @@
         
         <div class="iframe-ph" id="toggle-ph", style= "text-align: center; display: none";> 
                      
-        <div id="test-resp"><h2></h2> </div>
+        <div id="test-resp"><h2 id = "hdrX"></h2> </div>
             <iframe id = "ph-iframe1" src="" frameborder="0" width="560" height="340" scrolling="no" allowfullscreen></iframe>
         </div>
         <!-- Insta/TikTok/YouTube Link-in-bio -->
