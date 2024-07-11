@@ -1,7 +1,7 @@
 fixed-button-width: true # Set to true/false
 icon-position: left # Set to left/right
 buttons:
-  - category: Check out these other sites:
+  - category: Check out these sites
     items:
     - title: Look At Her Now
       url: https://landing.lookathernow.com/?ats=eyJhIjoxMDYwMTU2LCJjIjo2MjEwNzk0MywibiI6NjYsInMiOjU2OCwiZSI6OTExMCwicCI6Mn0=
