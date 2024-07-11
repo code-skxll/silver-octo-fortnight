@@ -111,10 +111,10 @@
                 let newCode = linkUncut.slice(linkIndx + 1)
                 
                 
+                document.getElementById('load-scr-01').style.display = 'none';
+                document.getElementById('ph-iframe1').src = "https://www.pornhub.com/embed/" + newCode;
                 
-                document.getElementById('ph-iframe1').src = "https://www.pornhub.com/embed/" + newCode
-                
-                document.getElementById('load-scr-01').style.display = none;
+        
                 document.getElementById('toggle-ph').style.display = 'block';
                 
                 document.getElementById('test-resp').innerHtml = title;
