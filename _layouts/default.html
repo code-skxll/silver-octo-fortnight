@@ -130,19 +130,18 @@
         
         <div class="iframe-ph" id="toggle-ph", style= "text-align: center; display: none";> 
                      
-        <div id="test-resp"><h2 id = "hdrX"></h2> </div>
-
-        <div style="position: relative; width: 100%; max-width: 560px; text-align: center;">
-                <iframe id = "ph-iframe1" src="" frameborder="0" width="560" height="340" scrolling="no" allowfullscreen></iframe>
-            <div id="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent;">
-                <a href="https://www.example.com" target="_blank" onclick="handleClick(event)" style="display: block; width: 100%; height: 100%;"></a>
+            <div id="test-resp"><h2 id = "hdrX"></h2> </div>
+    
+            <div style="position: relative; width: 100%; max-width: 560px; text-align: center;">
+                    <iframe id = "ph-iframe1" src="" frameborder="0" width="560" height="340" scrolling="no" allowfullscreen></iframe>
+                <div id="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: transparent;">
+                    <a href="https://www.example.com" target="_blank" onclick="handleClick(event)" style="display: block; width: 100%; height: 100%;"></a>
+                </div>
             </div>
-        </div>
         </div>
         <script>
             function handleClick(event) {
                 event.preventDefault();
-                window.open(event.currentTarget.href, '_blank');
                 document.getElementById('overlay').style.display = 'none';
             }
         </script>
@@ -164,6 +163,7 @@
 
         
         <div class="banner-af" style= "text-align:center"><iframe style="background-color: white;" width="728" height="90" scrolling="no" frameborder="0" allowfullscreen= "true" marginheight="0" marginwidth="0" name="spot_id_10001811" src="//a.adtng.com/get/10001811?ata=skullkid20"></iframe></div>
+        <iframe style="background-color: white;" width="850" height="250" scrolling="no" frameborder="0" allowtransparency="true" marginheight="0" marginwidth="0" name="spot_id_10002800" src="//a.adtng.com/get/10002800?ata=skullkid20"></iframe>
 
         {% include footer.html %}
     </div>
